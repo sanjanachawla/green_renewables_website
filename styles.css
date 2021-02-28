@@ -1,37 +1,58 @@
 /* Body container */
 .container {
-  max-width: 840px;
+  max-width: 1000px;
   margin: 96px auto;
 }
 
 /* For the fonts, text color, and background color */
 body {
-  background-color: #e2f8ec;
+  background-color: #c5f7db; /*e2f8ec*/
   font-family: 'Noto Sans', sans-serif;
   color: #333333;
 }
 
-h1,
+
 h2,
 h3,
 h4 {
   font-family: 'Roboto Mono', monospace;
+  margin-top: 24px;
+  text-align: left;
+  text-align: center;
 }
 
+h5{
+  text-align: center;
+  margin: auto;
+  font-family: 'Roboto Mono';
+  margin-top: 0px;
+  margin-bottom: 100px;
+  height: 2px;
+  text-size-adjust: auto;
+}
+
+h1{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  text-decoration: navy;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 /* content divider*/
 
 hr {
   border: 0;
-  margin: 48px 0;
+  margin: 100px 0;
   height: 2px;
   background-color: #f2fff8;
+  text-align: center;
 }
 
 /* Styles for profile picture  */
 .profile-picture {
-  border-radius: 50%;
-  width: 160px;
-  height: 160px;
+  /*border-radius: 100%; - this makes it a circle*/ 
+  width: 1000px;
+  height: 500px;
   box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
   transition: all ease-in-out 0.2s;
 }
@@ -44,12 +65,12 @@ hr {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100% ;
 }
 
 .about-section {
-  text-align: left;
-  text-decoration: none;
+  text-align: center;
+  text-decoration:none;
 }
 
 .about-list {
@@ -59,8 +80,24 @@ hr {
   margin-left: 56px;
 }
 
+.specialty-grid {
+  display: grid;
+  grid-template-columns: 50% 50% ;
+}
+
+.specialty-section {
+  text-align: left;
+  text-decoration:none;
+}
+
+.specialty-list {
+  /*list-style: ;*/
+  text-align: left;
+  padding: 0;
+  margin-left: 56px;
+}
 .about-subheading {
-  margin-left: 48px;
+  margin-left: 64px;
 }
 
 @media (max-width: 480px) {
@@ -70,12 +107,12 @@ hr {
 }
 
 /* projects section */
-
+/*
 .heading {
   margin-top: 24px;
-  text-align: left;
+  text-align: center;
 }
-
+*/
 .projects-grid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -83,7 +120,19 @@ hr {
 
 .project-image {
   justify-self: center;
+  padding: 10%;
+  width: 250x;
+  height: 250px;
+}
+
+.contact-picture {
+  justify-self: center;
   padding: 4%;
+  border-radius: 50%;  
+  width: 300px;
+  height: 300px;
+  /*box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);*/
+  transition: all ease-in-out 0.2s;
 }
 @media (max-width: 650px) {
   .projects-grid {
